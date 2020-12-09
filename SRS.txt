@@ -1,0 +1,131 @@
+1042 - Mandar Tamboli
+1103 - Vishal Uppin
+PG-DAC(Feb-2020)
+
+Project Name: Airline Reservation System
+
+
+1.Introduction
+ 1.1 Purpose:
+	An airline reservation system(ARS) is basically an online reservation system.
+Online reservation system is used for the reservations of airline which supports to the passengers and travel agencies for making reservations for most major airline using one platform.
+Today all persons are busy with their schedule and no one have time to make a trip for holidays. We are providing a solution for that using this simple platform.
+This system is going to provide an easy access towards a Passengers. There is no requirement for any type of Agent. We are going to give all this facility in one project called Airline Reservation System".
+
+1.2 Scope:
+	The product is titled Airline Reservation System(ARS).The software that is being developed can be used to check the availability of flight tickets for specified flight, destination and date of journey.
+If the tickets are available to the user with their respective needs and specification then software provide a facility to book the tickets. If he wants to cancel the tickets, he can use the cancellation module of the Airline Reservation System
+
+1.3 Definations:
+	ARS: Airline Reservation System
+
+1.4 References:
+
+1.5 Overview: This system provides an easy solution to passenger's to book the ticket without going to any agent or somewhere else. 
+
+
+2. Overall Description: 
+	The software has two parts. User part and admin part. User part is sued as front end and admin part is backend. Admin is nothing but airline persons. It will allow passengers to access database and allow new Passengers to sign up for online access.
+This platform will allow passenger to search for flights that are available between two travel cities.(Departure city and Arrival city) on the date of journey.It will list out of all the flight's details like flight no,name,price and duration of journey etc. After search the system display list of available flights and allows Passenger to choose a particular flight. Then the system checks for the availability of seats on the flight. If the seats are available then the system allows the passenger to book a seat. Otherwise it asks the user to choose another flight.
+To book a flight the system asks the Passenger to enter his details such as name, address, city, state, and credit card number and contact number. Then it checks the validity of card and book the flight and update the airline database and user database. The system also allows the Passenger to cancel his/her reservation, if any problem occurs.
+The main purpose of this software is to reduce the mannual errors involved in the airline reservation process and make it convenient for the Passengers to book the flights.
+
+2.1 Product perspective
+>> Hardware Interface:
+* Hard Disk: The database connectivity requires a hardware configuration with a fast database system running with harddisk with high rpm.
+* The system must interface with the keyboard and mouse to interact with this software.
+
+>>Operations:
+	The user mode enables the end-users to do the end user operations like checking availability, reserving and cancelling of flight tickets.
+
+
+2.2 Product Functions:
+
+>>Viewing Flight Details:
+	The user will have the up-to-date info about the flights including
+* Flight Number
+* Flight Name
+* Flight route(Start and Destination stations)
+* Flight timings
+* Seat availability
+
+>>Reserving Tickets:
+	First user will select
+* Flight name/number
+* Flight Route
+
+2.3 User characteristics: 
+* User should be familiar with the terms like login,register,booking system etc.
+
+2.4 Principle Actors:
+* 2 principle Actors are passenger and Admin.
+
+2.5 General Constraints:
+* A full internet connection is required for ARS.
+
+3. Specific Requirements:
+>>3.1 Functional Requirements:
+
+3.1.1 Passenger should be able to search flights for specific date for one-way trips
+3.1.2 Passenger should be able to manually enter the names of departure and arrival cities
+3.1.3 Passenger should be able see all the possible flights based on the information he entered.
+3.1.4 Passenger should be able to sort the list of possible flights by price.
+3.1.5 Passenger should be able to request reservation cancellation.
+3.1.6 System should allow a Passenger to specify only departure date for one-way trips.
+3.1.7 System should allow a Passenger to specify both departure and arrival dates for roundtrips.
+3.1.8 System should provide the list of possible flights matching criterion of user inputs.
+3.1.9 System should demand Passenger to provide his/her full name to book the ticket.
+3.1.10 System should demand Passenger not to enter numbers for full name label.
+3.1.11 System should demand Passenger to provide his/her number of travel document to bookthe ticket.
+3.1.12 System should demand Passenger to enter only characters for full name label.
+3.1.13 System should demand Passenger to choose the payment method.(e-wallet/debit/credit/online/upi)
+3.1.14 Provided list of flights should contain information about duration of flight for each flight.
+3.1.15 Provided list of flights should illustrate the exact hours of departure and arrival for each flight.
+3.1.16 Provided list of flights should contain information about departure and arrival airportnames for each flight.
+3.1.17 Admin should be able to add new flights to the system.
+3.1.18 Admin should be able to modify the details of existing flights.
+3.1.19 Admin should be able to remove cancelled flights from the system.
+3.1.20 Admin should be able to see reservation cancellation requests.
+3.1.21 Admin should be able to accept reservation cancellation requests.
+3.1.22 Admin should be able to reject reservation cancellation requests.
+3.1.23 Admin should be able to see details of existing bookings.
+
+
+>>3.2 Non-Functional Requirements
+
+3.2.1 Security Requirements
+* System should grant administrative privileges only to the one who logins with predefinedadministrative username and password.
+* System should allow administrator to change his/her system-generated password as he/she wishes.
+* System should block access to one who fails to login three time in a row.
+
+3.2.2 Maintainence Requirements
+* User should be displayed acceptance message within 5 seconds, when he/she submitsentered data to the system.
+
+3.2.3 Portability Requirements
+* System should be manageable in web-browsers of Internet Explorer, Google Chrome,Mozilla Firefox, Opera.
+
+3.2.4 Other Requirements
+* System should display a warning message if the customer input for full name is out of defined standard.
+* System should display a warning message if the customer wants to book flights for morethan 6 people.
+* 24x7 availability
+
+4.Interface Requirement:
+	1.User Interface:
+		Sign up
+		Login
+		Search for flight
+	 	Search for fare
+		Reserve flight type (1)One way (2)round trip
+ 		Make Reservation
+		Modify flight
+ 		Cancel flight
+		Logout
+
+	2. Admin Interface:
+		Sign up
+		Admin login
+		Delete/cancel a flight
+		Modify flight information
+		Modify user reservation
+		Maintain user information
+		View user information
